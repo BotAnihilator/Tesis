@@ -1,0 +1,127 @@
+% Created 2018-05-23 Wed 20:43
+% Intended LaTeX compiler: pdflatex
+\documentclass[twoside,openright]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{mathtools}
+\usepackage{url}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{amsopn}
+\usepackage{nicefrac}
+\usepackage{units}
+\usepackage{gensymb}
+\newcommand{\rojo}[1]{{\color{red}{#1}}}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Gerardo Guillermo},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.1.7 (Org mode 9.1.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+\chapter{Introduction}
+\label{sec:org89a9126}
+Synchrotron Radiation (SR) emission is the phenomenon product of the change of
+direction of relativistic-charged particles.
+Ever since it was observed in 1947 at the G.E. Synchrotron, the
+interest in its study has increased, even though great part of the theory was
+developed before that, and it is still being developed at the present (after a
+hundred years). 
+
+In electron storage rings and circular accelerators, the emitted synchrotron
+radiation reaches high intensities and energies. Although,  Nowadays, there are dedicated
+electron accelerators with the purpose of producing SR with specific
+characteristics; in many other accelerators, S.R. is considered a secondary
+product which is nocuous to the operation of the machine.
+
+The power of emitted S.R. depends on the square of the Lorentz factor
+(\(\gamma_r^{2}\)). For this reason S.R. was considered negligible in hadron
+accelerators. It was until the construction of LHC, that hadron S.R. became a
+problem for protons with a \(\gamma_r^{2}=7460\) that the negative effects of S.R. were not
+negligible. The LHC is the coldest place in the universe, in order to keep the
+superconductor magnetic coils at 1.9 °K, gigantic cryogenic plants are used
+because of the arc S.R. heat load of 0.17 W/m/aperture. The vacuum in the LHC is
+as low as interestellar vacuum \(~10^{-14}\) bar, high-energy photons from S.R. can
+remove molecules and particles from the wall, degrading this vacuum.  Yet
+another problem related to S.R. is the formation of electron clouds. These
+clouds could grow from seed electrons torn from the wall by incident photons,
+these electrons are attracted by the proton beam and also follow the magnetic
+field lines. Electron-cloud problems are the main motivation for these studies.
+
+The main objective of this work is to map the absorption points of S.R. photons in the
+arcs of the LHC, with the idea that this map could be used in the future to
+generate a photon distribution function (P.D.F.) to be used as an input for
+electron-cloud simulations. To make this map we use the code Synrad3D developed
+at  Cornell which generates and
+tracks synchrotron-radiation photons in an accelerator beam line, including
+specular and diffuse reflection on the chamber surface.  The photons are
+generated randomly in any bending field, with initial
+parameters determined by the local beam distribution, the local electromagnetic
+field, and by the beam energy.  When a photon hits the chamber wall its
+reflection probability depends on the energy and angle of incidence, as well as
+on the material, including combinations of multiple layers, and on the surface
+roughness. 
+
+The first chapter of this thesis is devoted to the most basic introduction to
+accelerator design \rojo\{a lo mejor accelerator design no es la mejor forma de
+decirlo, basics of accelerators o algo asi, semblance quizá\} and then it presents some features
+\rojo{a lo mejor en vez de some features, usar the description} of the
+highest-energy circular colliders where our analysis was implemented.
+
+We then present in the second chapter a qualitative description of S.R. \rojo\{a
+lo mejor poner explícito synchrotron radiation\} for a further understanding of
+it, the author recommends going through chapters 1, 2 and 3 of "Synchrotron
+Radiation" by A. A. Sokolov. \rojo\{aqui no se si debo decir eso o no\ldots{} en caso
+de que sí, ver como hacer la referencia de forma correcta\}
+
+A description of the code Synrad3D is given in the third chapter. This is the
+code we use for all simulations described in this thesis. Also, some tests and
+benchmarking of the code will be mentioned.
+
+Finally, in the last two chapters, we present our simulations, and the
+implications they have to the previously mentioned accelerators.
+
+\chapter{Accelerators}
+\label{sec:orgb7f1f1f}
+\section{LHC}
+\label{sec:org049c567}
+\begin{enumerate}
+\item HL-LHC
+\label{sec:org3c7bf75}
+\item HE-LHC
+\label{sec:orgeed56d8}
+\end{enumerate}
+\section{FCC-hh}
+\label{sec:org23b9199}
+\chapter{Synchrotron Radiation}
+\label{sec:org5e1a041}
+\chapter{Synrad3D}
+\label{sec:org121f83e}
+\chapter{Results}
+\label{sec:org7dd8dd8}
+\chapter{Conclusions}
+\label{sec:org8164c45}
+aqui van als conclusiones
+\chapter{References}
+\label{sec:orgaf0569c}
+\end{document}

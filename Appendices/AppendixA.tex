@@ -1,0 +1,52 @@
+% Appendix A
+
+\chapter{Codes} % Main appendix title
+
+\label{codes} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+\lhead{Appendix A. \emph{Codes}} % This is for the header on each page - perhaps a shortened title
+
+\section{Run Synrad3d}
+\begin{verbatim}
+k=simulation_1
+./sendbatchs verylong $k /afs/cern.ch/work/g/gerardo/bmad_dist/bsim/synrad3d ./synrad3d synrad.init
+\end{verbatim}
+
+\section{Batch}
+\begin{verbatim}
+jobpath=/afs/cern.ch/user/g/gerardo/scratch1/
+sourcepath=/afs/cern.ch/user/g/gerardo/synrad3d
+current=`pwd`
+
+  if [ $# -ne '0' ]
+  then
+
+count=$2
+limit=$2
+
+	jobname="/$3 > $jobpath$count/output.data"
+	echo $jobpath$count
+	mkdir $jobpath$count
+	cp $sourcepath/job$1.nqb $jobpath$count/jobscript.nqb
+	cp $current/$4 $jobpath$count/ecloud.input
+    cd $jobpath$count
+	echo "#BSUB -J inel3 " >> jobscript.nqb
+	echo "#BSUB -o $jobpath$count/job.output" >> jobscript.nqb
+	echo "#BSUB -e $jobpath$count/err.output" >> jobscript.nqb
+	echo "cd $jobpath$count" >> jobscript.nqb
+
+    echo $sourcepath$jobname >> jobscript.nqb
+	echo "cp eloss.data $jobpath$count" >> jobscript.nqb
+	echo "cp main.data $jobpath$count" >> jobscript.nqb
+	echo "cp *.output $jobpath$count" >> jobscript.nqb
+	echo "cp err*.* $jobpath$count" >> jobscript.nqb
+
+    bsub < $jobpath$count/jobscript.nqb
+
+
+  else
+   echo "Please specify a job class (short, medium or long)"
+   echo "a run number, an executable and an include file!"
+   echo "Usage: sendbatch 'class' 'runnumber' 'exec' 'include file'"
+  fi
+\end{verbatim}

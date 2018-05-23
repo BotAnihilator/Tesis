@@ -1,0 +1,306 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 1.42 (19/1/14)
+%v 
+% This template has been downloaded from:
+% http://www.latextemplates.com
+% Original authors:
+% Steven Gunn 
+% http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/
+% and
+% Sunil Patel
+% http://www.sunilpatel.co.uk/thesis-template/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Note:
+% Make sure to edit document variables in the Thesis.cls file
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, letterpaper, twoside, openright]{Thesis} % Paper size, default font size and one-sided paper
+\usepackage{pdfpages}
+\usepackage{subcaption}
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage[spanish,english]{babel}
+\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\title{\ttitle} % Defines the thesis title - don't touch this
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\setstretch{1.3} % Line spacing of 1.3
+	
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\newcommand{\srthree}{\texttt{Synrad3D}\xspace}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfsubject=\subjectname}
+\hypersetup{pdfauthor=\authornames}
+\hypersetup{pdfkeywords=\keywordnames}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+%\begin{titlepage}
+
+
+%\end{titlepage}
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%	Your institution may give you a different text to place here
+%----------------------------------------------------------------------------------------
+
+\Declaration{
+
+\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+
+I, \authornames, declare that this thesis titled, '\ttitle' and the work presented in it are my own. I confirm that:
+
+\begin{itemize} 
+\item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in candidature for a research degree at CINVESTAV.
+\item[\tiny{$\blacksquare$}] Where any part of this thesis has previously been submitted for a degree or any other qualification at CINVESTAV or any other institution, this has been clearly stated.
+\item[\tiny{$\blacksquare$}] Where I have consulted the published work of others, this is always clearly attributed.
+\item[\tiny{$\blacksquare$}] Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+\item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
+\item[\tiny{$\blacksquare$}] Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+\end{itemize}
+ 
+Signed:\\
+\rule[1em]{25em}{0.5pt} % This prints a line for the signature
+ 
+Date: August 2004 \\
+\rule[1em]{25em}{0.5pt} % This prints a line to write the date
+}
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{empty} % No headers or footers for the following pages
+
+\null\vfill % Add some space to move the quote down the page a bit
+
+\textit{``God used beautiful mathematics in creating the world."}
+
+\begin{flushright}
+Paul Dirac
+\end{flushright}
+
+\vfill\vfill\vfill\vfill\vfill\vfill\null % Add some space at the bottom to position the quote just right
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
+
+\abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+
+At energies in the order of TeV, synchrotron radiation (SR) is very high, even in a hadron beam. SR could be regarded as an important heat load to the cryogenic system cooling the superconducting electromagnets. In this work SR is simulated using \srthree to analize which lattice elements of a section of the LHC absorb the most photon and analize how does it affect to have a sawtooth pattern in the beam screen.
+}
+
+\addtotoc{Resumen} % Add the "Abstract" page entry to the Contents
+\selectlanguage{spanish}
+\abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+A energías en el orden de TeV la radición de sincrotrón es muy alta, incluso usando rayos de hadrones, esta radiación puede representar una carga calórica demasiado grande para electroimanes trabajando en estado criogénico. En este trabajo se simula la radiación de sincrotrón generada por un haz de protones en el LHC, utilizando \srthree, para analizar qué sección en un arco absorben la mayor cantidad de fotones y analizar como nos afecta tener en la pantalla ('beam screen') un patrón de diente de sierra.
+}
+\selectlanguage{english}
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\setstretch{1.3} % Reset the line-spacing to 1.3 for body text (if it has changed)
+
+\acknowledgements{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+
+I cannot express enough thanks to the members of this thesis committee: Dr. Rodrigo Huerta Quintanilla and Dr. Román Castro Rodriguez.
+
+The completion of this project could not have been accomplished without the support of my supervisor, Jesus Guillermo Contreras Nuño; and so many people at CERN specially Frank Zimmermann.
+
+I thank Consejo de Ciencia y Tecnología (CONACYT) and CINVESTAV for the financial support during my masters studies. I also thank CERN for all the information they make available to students such as myself.
+
+I also want to thank the administrative personnel from CINVESTAV Mérida which has been helpful and efficient, specially Dr. Gerko Oskam and Zhirnay Rodriguez Pinelo.
+}
+\clearpage % Start a new page
+
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\listoftables % Write out the List of Tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
+\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
+\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+{
+\textbf{AFS} & \textbf{A}ndrew \textbf{F}ile \textbf{S}ystem \\
+\textbf{ALICE} & \textbf{A} \textbf{L}arge \textbf{I}on \textbf{C}ollider \textbf{E}xperiment\\
+\textbf{ATLAS} & \textbf{A} \textbf{T}oroidal \textbf{L}HC \textbf{A}pparatu\textbf{S}\\
+\textbf{CERN} & \textbf{C}onseil \textbf{E}uropéen pour la \textbf{R}echerche \textbf{N}ucléaire\\
+ & European Organization for Nuclear Research  \\ 
+\textbf{CFH} & \textbf{C}onfoederatio \textbf{H}elvetica \textbf{F}ranc\\
+\textbf{CMS} & \textbf{C}ompact \textbf{M}uon \textbf{S}olenoid\\
+\textbf{FODO} & \textbf{Fo}ocus$/$\textbf{D}ef\textbf{O}cus\\
+\textbf{LHC} & \textbf{L}arge \textbf{H}adron \textbf{C}ollider \\
+\textbf{LHCb} & \textbf{LHC} \textbf{b}eauty		 \\
+\textbf{LEP} & \textbf{L}arge \textbf{E}lectron - \textbf{P}ositron Collider \\
+\textbf{LxPLUS} & \textbf{L}x \textbf{P}ublic \textbf{L}ogin \textbf{S}ervice\\
+\textbf{SLC5} & \textbf{S}cientific \textbf{L}inux \textbf{C}ERN \textbf{5}\\
+\textbf{SMIF} & \textbf{S}ynrad3D \textbf{M}ain \textbf{I}nput \textbf{F}ile\\
+\textbf{SMOF} & \textbf{S}ynrad3D \textbf{M}ain \textbf{O}utput \textbf{F}ile\\
+\textbf{SR} & \textbf{S}ynchrotron \textbf{R}adiation \\
+\textbf{SSS} & \textbf{S}hort \textbf{S}traight - \textbf{S}ection \\
+%\textbf{LHC} & \textbf{L}arge \textbf{H}adron \textbf{C}ollider \\
+%\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+%
+%\lhead{\emph{Physical Constants}} % Set the left side page header to "Physical Constants"
+
+%\listofconstants{lrcl} % Include a list of Physical Constants (a four column table)
+%{
+%Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{1}}$ (exact)\\
+%Electron Volt & $c$ & $=$ & $1.602\ 176\ 57\times10^{-19}\ \mbox{J}$ (exact)\\
+% Constant Name & Symbol & = & Constant Value (with units) \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\lhead{\emph{Symbols}} % Set the left side page header to "Symbols"
+
+\listofnomenclature{lll} % Include a list of Symbols (a three column table)
+{
+$d$ & Distance & m \\
+$E$ & Energy & eV \\
+$P$ & Power & W (Js$^{-1}$) \\
+$s$ & Transversal Direction & m \\
+$T$ & Temperature & K \\
+% Symbol & Name & Unit \\
+
+& & \\ % Gap to separate the Roman symbols from the Greek
+$\gamma_r$ &  Relativistic gamma factor & \\
+$\varepsilon_{c}$ & Critical photon energy & eV \\
+$\rho$ & Radius & m \\
+$\sigma$ & Surface roughness & nm \\
+$\omega_{c}$ & Critical photon frequency & rads$^{-1}$ \\
+
+% Symbol & Name & Unit \\
+}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+%\setstretch{1.3} % Return the line spacing back to 1.3
+
+%\pagestyle{empty} % Page style needs to be empty for this page
+
+%\dedicatory{Dedicated to my imaginary girlfriend, who has always been my motivator} % Dedication text
+
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter1}
+\input{Chapters/Chapter2} 
+\input{Chapters/Chapter3}
+\input{Chapters/Chapter4v2} 
+\input{Chapters/Chapter5} 
+%\input{Chapters/Chapter6} 
+\input{Conclusion} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+%\input{Appendices/AppendixA}
+%\input{Appendices/AppendixB}
+%\input{Appendices/AppendixC}
+
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\backmatter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\label{Bibliography}
+%\renewcommand{\refname}{References}  % for the article class
+\renewcommand{\bibname}{References}  % for the report or book class
+
+\lhead{\emph{References}} % Change the page header to say "Bibliography"
+
+\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+
+\bibliography{Bib} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+
+
+
+
+\end{document}  

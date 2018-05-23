@@ -1,0 +1,21 @@
+% Chapter 1
+
+\chapter{Introduction} % Main chapter title
+
+\label{intro} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter 1. \emph{Introduction}} % This is for the header on each page - perhaps a shortened title
+
+In every circular particle accelerator, such as the LHC, energy is emitted in the form of synchrotron radiation (SR). This energy is then absorbed by the machine protection system. A circular accelerator consists mostly of 'superbends', electromagnets built with superconductor materials, which need to be very cold (around 4 K). If the LHC superbends heat up from 1.9 K to 4.5 K, the magnetic field strength decreases from 8.33 T to 6.8 T\citep{faq}. SR from bunches in the LHC creates electrons by photoelectric effect at the vacuum chamber wall. These electrons are accelerated by the positively charged particle bunch; when they impact the opposite wall, they can generate secondary electrons which can in turn be accelerated by the next bunch. Therefore, and avalanche production of secondary electrons gives rise to an electron cloud and its undesirable effects\citep{miguel}. This is the reason why it is so important to know where and how SR is absorbed by each element of the lattice that conforms the accelerator.
+
+At the LHC the maximum $\gamma_r = [1 - (\frac{v_r}{c})^{2}]^{-1/2}$ that can be reached depends on the maximum magnetic dipole field, which nominally is 8.33 T at 7 TeV beam energy, but the actual field limit depends on the heat load and temperature of the magnets and therefore on the amount of the radiation of the machine during operation\citep{DR}. So to achieve higher dipole fields we need to minimize the effects of SR.
+
+It is not common that SR is considered as a problem in hadron storage rings, because it is very small compared to electron storage rings, but at very high energies such as the ones reached at the LHC it becomes a problem specially when it is then absorbed by the cryogenic system\citep{DR}.
+
+Work on this matter has been done by D. Sagan, G. Duncan, F. Zimmermann and G.H.I Maury\citep{TUP}. In this thesis, we continue and extend the studies of \citep{TUP}. These studies consist on the use of  \srthree code, described in \ref{Synrad3d}, to track SR photons at the LHC ring. Their simulations were performed for a 7 TeV proton beam energy and assumed a C layer of 10 nm on a Cu substrate. We study this problem in very particular conditions: at the LHC at CERN we focus on the main bending elements elements and we are adding the sawtooth pattern, a series of 30 $\mu$m high steps spaced at a distance of 500 $\mu$m in the longitudinal direction which is impressed on the horizontal outer side of the beam screen. Through simulation using the simulation software \srthree , we are able to tell which element absorb the largest number of photons and  how many times did the photons bounce before being absorbed.
+
+The main objective of this work is to analyze the difference in the simulation between using the sawtooth pattern or not in a small section of the main bending magnets with a 7 TeV proton energy beam. 
+
+%----------------------------------------------------------------------------------------
+
+%\section{sexion}

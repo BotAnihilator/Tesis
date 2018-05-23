@@ -1,0 +1,38 @@
+% Chapter Template
+
+\chapter{Results} % Main chapter title
+
+\label{results} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 5. \emph{Results}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Simulation}
+We ran \srthree which was described in chapter \ref{soft}. Our aim was to simulate ten thousand photons, but because of technical challenges mentioned in subsection \ref{lxplus}, we divided the simulation into smaller simulations with a much smaller number of photons, there were simulations with 10, 20 and 50 photons each, which we can join together because photons do not interact with each other.
+
+
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{SMIF}
+The SMIF used to run this simulations used the following parameters. \ref{smif}
+The simulations started at element 142 and ended at element 146,  positive direction was choosen as if we were analizing Beam 1. 
+ 
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Subsection 2}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Main Section 2}
+
+
