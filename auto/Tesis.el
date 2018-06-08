@@ -6,7 +6,7 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("Thesis" "12pt" "letterpaper" "twoside" "openright")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("natbib" "square" "numbers" "comma" "sort&compress") ("babel" "spanish" "english") ("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem")))
+                     '(("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem") ("natbib" "square" "numbers" "comma" "sort&compress") ("babel" "spanish" "english")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
@@ -33,8 +33,6 @@
     "Thesis12"
     "pdfpages"
     "subcaption"
-    "natbib"
-    "babel"
     "inputenc"
     "fontenc"
     "graphicx"
@@ -55,12 +53,17 @@
     "amsopn"
     "nicefrac"
     "units"
-    "gensymb")
+    "gensymb"
+    "natbib"
+    "babel")
    (TeX-add-symbols
     '("rojo" 1)
     "srthree"
     "HRule")
    (LaTeX-add-labels
-    "sec:orgaf0569c"))
+    "Bibliography"
+    "sec:orgaf0569c")
+   (LaTeX-add-bibliographies
+    "refs"))
  :latex)
 

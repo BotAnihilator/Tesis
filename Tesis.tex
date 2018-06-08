@@ -4,12 +4,6 @@
 \documentclass[12pt, letterpaper, twoside, openright]{Thesis} % Paper size, default font size and one-sided paper
 \usepackage{pdfpages}
 \usepackage{subcaption}
-\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
-\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
-\usepackage[spanish,english]{babel}
-\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
-\title{\ttitle}
-\appendix
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
@@ -32,6 +26,36 @@
 \usepackage{nicefrac}
 \usepackage{units}
 \usepackage{gensymb}
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage[spanish,english]{babel}
+\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\title{\ttitle}
+\appendix% Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+%\input{Appendices/AppendixA}
+%\input{Appendices/AppendixB}
+%\input{Appendices/AppendixC}
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\backmatter
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\label{Bibliography}
+%\renewcommand{\refname}{References}  % for the article class
+\renewcommand{\bibname}{References}  % for the report or book class
+
+\lhead{\emph{References}} % Change the page header to say "Bibliography"
+
+\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+
+\bibliography{refs} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
 \newcommand{\rojo}[1]{{\color{red}{#1}}}
 \date{\today}
 \title{}
@@ -93,7 +117,7 @@
 \input{Chapters/Intro}
 \input{Chapters/Accel}
 \input{Chapters/SR}
-%\input{Chapters/EC}
+% \input{Chapters/EC}
 \input{Chapters/Simulations}
 \input{Chapters/Results}
 \input{Chapters/Conclusions}
