@@ -4,9 +4,9 @@
    (setq TeX-command-extra-options
          "--shell-escape")
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("book" "twoside" "openright")))
+                     '(("Thesis" "12pt" "letterpaper" "twoside" "openright")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem")))
+                     '(("natbib" "square" "numbers" "comma" "sort&compress") ("babel" "spanish" "english") ("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
@@ -16,8 +16,12 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
-    "book"
-    "bk10"
+    "Thesis"
+    "Thesis12"
+    "pdfpages"
+    "subcaption"
+    "natbib"
+    "babel"
     "inputenc"
     "fontenc"
     "graphicx"

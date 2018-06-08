@@ -1,6 +1,14 @@
+%\include{main.tex} %comentar esta linea para salga bien xD
 % Created 2018-05-23 Wed 20:43
 % Intended LaTeX compiler: pdflatex
-\documentclass[twoside,openright]{book}
+\documentclass[12pt, letterpaper, twoside, openright]{Thesis} % Paper size, default font size and one-sided paper
+\usepackage{pdfpages}
+\usepackage{subcaption}
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage[spanish,english]{babel}
+\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\title{\ttitle}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
