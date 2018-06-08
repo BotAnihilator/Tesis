@@ -182,15 +182,15 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Simulations of Synchrotron-Radiation Photon Distribution for the CERN Large Hadron Collider} % Your thesis title - this is used in the title and ft
+\thesistitle{Simulation of Synchrotron Radiation in the Arcs of CERN highest energy Accelerators } % Your thesis title - this is used in the title and ft
 %-------------------------------------------------  
-\supervisor{Dr. Guillermo Contreras Nunó} % You supervisor's name - this is used in the title page
+\supervisor{Dr. Guillermo Contreras Nuño} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
-\supervisorr{Dr. Georfrey Humberto Israel Maury Cuna} % You supervisor's name - this is used in the title page
+\supervisorr{Dr. Frank Zimmermann} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
 \examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
-\degree{Master in Applied Physics} % Your degree name - this is currently used in the title page and abstract
+\degree{Ph. D. in Theoretical Physics} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   
 \authors{Gerardo Guillermo Cantón} % Your name - this is used in the title page and abstract
 %-------------------------------------------------   
@@ -201,7 +201,7 @@
 \keywords{} % Keywords for your thesis - this is not currently used anywhere in the template, cite it with \keywordnames if you want it
 %-------------------------------------------------   
 \university{\texorpdfstring{\href{http://www.mda.CINVESTAV.mx} % Your university's URL
-                {CINVESTAV}} % Your university's name - this is currently used in the title page
+                {CINVESTAV del IPN}} % Your university's name - this is currently used in the title page
                 {University Name}}
 %-------------------------------------------------   
 \UNIVERSITY{\texorpdfstring{\href{University Web Site URL Here (include http://www.mda.CINVESTAV.mx)} % Your university's URL
@@ -225,7 +225,7 @@
                 {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
 %-------------------------------------------------                
 \faculty{\texorpdfstring{\href{Faculty Web Site URL Here (include http://www.mda.CINVESTAV.mx/)} % Your faculty's URL
-                {CINVESTAV}} % Your faculty's name - this is currently used in the abstract page
+                {CINVESTAV del IPN}} % Your faculty's name - this is currently used in the abstract page
                 {Faculty Name}}
 %-------------------------------------------------                
 \FACULTY{\texorpdfstring{\href{Faculty Web Site URL Here (include http://)} % Your faculty's URL

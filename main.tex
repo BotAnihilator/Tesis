@@ -32,6 +32,38 @@
 \usepackage[spanish,english]{babel}
 \hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle} % Defines the thesis title - don't touch this
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+%\input{Appendices/AppendixA}
+%\input{Appendices/AppendixB}
+%\input{Appendices/AppendixC}
+
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\backmatter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\label{Bibliography}
+%\renewcommand{\refname}{References}  % for the article class
+\renewcommand{\bibname}{References}  % for the report or book class
+
+\lhead{\emph{References}} % Change the page header to say "Bibliography"
+
+\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+
+\bibliography{Bib} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+
+
+
+
 \begin{document}
 
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
@@ -86,7 +118,7 @@ Signed:\\
 \\
 Gerardo Guillermo
  
-Date: August 2004 \\
+Date: \today \\
 \rule[1em]{25em}{0.5pt} % This prints a line to write the date
 }
 
@@ -273,37 +305,5 @@ $\omega_{c}$ & Critical photon frequency & rads$^{-1}$ \\
 %----------------------------------------------------------------------------------------
 
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-
-\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
-
-% Include the appendices of the thesis as separate files from the Appendices folder
-% Uncomment the lines as you write the Appendices
-
-%\input{Appendices/AppendixA}
-%\input{Appendices/AppendixB}
-%\input{Appendices/AppendixC}
-
-
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-
-\backmatter
-
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-\label{Bibliography}
-%\renewcommand{\refname}{References}  % for the article class
-\renewcommand{\bibname}{References}  % for the report or book class
-
-\lhead{\emph{References}} % Change the page header to say "Bibliography"
-
-\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
-
-\bibliography{Bib} % The references (bibliography) information are stored in the file named "Bibliography.bib"
-
-
-
-
 
 \end{document}  

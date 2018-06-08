@@ -16,6 +16,14 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
+    "Declaration"
+    "Quote_page"
+    "Abstracts"
+    "Ack"
+    "Abb"
+    "Constants"
+    "Symbols"
+    "Intro"
     "Thesis"
     "Thesis12"
     "pdfpages"
@@ -44,7 +52,9 @@
     "units"
     "gensymb")
    (TeX-add-symbols
-    '("rojo" 1))
+    '("rojo" 1)
+    "srthree"
+    "HRule")
    (LaTeX-add-labels
     "sec:org89a9126"
     "sec:orgb7f1f1f"
