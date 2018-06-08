@@ -61,15 +61,6 @@
     "srthree"
     "HRule")
    (LaTeX-add-labels
-    "sec:orgb7f1f1f"
-    "sec:org049c567"
-    "sec:org3c7bf75"
-    "sec:orgeed56d8"
-    "sec:org23b9199"
-    "sec:org5e1a041"
-    "sec:org121f83e"
-    "sec:org7dd8dd8"
-    "sec:org8164c45"
     "sec:orgaf0569c"))
  :latex)
 
