@@ -23,7 +23,12 @@
     "Abb"
     "Constants"
     "Symbols"
-    "Intro"
+    "Chapters/Intro"
+    "Chapters/Accel"
+    "Chapters/SR"
+    "Chapters/Simulations"
+    "Chapters/Results"
+    "Chapters/Conclusions"
     "Thesis"
     "Thesis12"
     "pdfpages"
@@ -56,7 +61,6 @@
     "srthree"
     "HRule")
    (LaTeX-add-labels
-    "sec:org89a9126"
     "sec:orgb7f1f1f"
     "sec:org049c567"
     "sec:org3c7bf75"
