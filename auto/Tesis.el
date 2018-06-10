@@ -29,6 +29,7 @@
     "Chapters/Simulations"
     "Chapters/Results"
     "Chapters/Conclusions"
+    "Appendices/AppendixA"
     "Thesis"
     "Thesis12"
     "pdfpages"
@@ -58,11 +59,10 @@
     "babel")
    (TeX-add-symbols
     '("rojo" 1)
-    "srthree"
+    "sr"
     "HRule")
    (LaTeX-add-labels
-    "Bibliography"
-    "sec:orgaf0569c")
+    "Bibliography")
    (LaTeX-add-bibliographies
     "refs"))
  :latex)

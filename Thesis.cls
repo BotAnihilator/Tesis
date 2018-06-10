@@ -160,7 +160,7 @@
 \newcommand*{\supervisorr}[1]{\def\supnamer{#1}}
 \newcommand*{\thesistitle}[1]{\def\ttitle{#1}}
 \newcommand*{\examiner}[1]{\def\examname{#1}}
-\newcommand*{\degree}[1]{\def\degreename{#1}}
+%\newcommand*{\degree}[1]{\def\degreename{#1}}
 \newcommand*{\authors}[1]{\def\authornames{#1}}
 \newcommand*{\addresses}[1]{\def\addressnames{#1}}
 \newcommand*{\university}[1]{\def\univname{#1}}
@@ -190,7 +190,7 @@
 %-------------------------------------------------   
 \examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
-\degree{Ph. D. in Theoretical Physics} % Your degree name - this is currently used in the title page and abstract
+%\degree{Ph. D. in Theoretical Physics} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   
 \authors{Gerardo Guillermo Cantón} % Your name - this is used in the title page and abstract
 %-------------------------------------------------   

@@ -31,30 +31,7 @@
 \usepackage[spanish,english]{babel}
 \hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle}
-\appendix% Cue to tell LaTeX that the following 'chapters' are Appendices
 
-% Include the appendices of the thesis as separate files from the Appendices folder
-% Uncomment the lines as you write the Appendices
-
-%\input{Appendices/AppendixA}
-%\input{Appendices/AppendixB}
-%\input{Appendices/AppendixC}
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-
-\backmatter
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-\label{Bibliography}
-%\renewcommand{\refname}{References}  % for the article class
-\renewcommand{\bibname}{References}  % for the report or book class
-
-\lhead{\emph{References}} % Change the page header to say "Bibliography"
-
-\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
-
-\bibliography{refs} % The references (bibliography) information are stored in the file named "Bibliography.bib"
 
 \newcommand{\rojo}[1]{{\color{red}{#1}}}
 \date{\today}
@@ -66,6 +43,12 @@
  pdfsubject={},
  pdfcreator={Emacs 25.1.7 (Org mode 9.1.3)}, 
  pdflang={English}}
+
+\newcommand{\srthree}{\texttt{Synrad3D}\xspace}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+
+
 
 \begin{document}
 
@@ -79,8 +62,7 @@
 \lhead{} % Clears the left side page header
 
 \pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
-\newcommand{\srthree}{\texttt{Synrad3D}\xspace}
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
 \input{Declaration}
 \input{Quote_page}
 \input{Abstracts}
@@ -115,6 +97,7 @@
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 \input{Chapters/Intro}
+\cite{dcs1}
 \input{Chapters/Accel}
 \input{Chapters/SR}
 % \input{Chapters/EC}
@@ -122,6 +105,32 @@
 \input{Chapters/Results}
 \input{Chapters/Conclusions}
 % \input{Chapters/future}
-\chapter{References}
-\label{sec:orgaf0569c}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\label{Bibliography}
+%\renewcommand{\refname}{References}  % for the article class
+\renewcommand{\bibname}{References}  % for the report or book class
+\lhead{\emph{References}} % Change the page header to say "Bibliography"
+\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+\bibliography{refs} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+\addcontentsline{toc}{chapter}{References}
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\input{Appendices/AppendixA}
+%\input{Appendices/AppendixB}
+%\input{Appendices/AppendixC}
+\end{document} 
 \end{document}
