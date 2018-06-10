@@ -59,7 +59,7 @@
     "babel")
    (TeX-add-symbols
     '("rojo" 1)
-    "sr"
+    "srthree"
     "HRule")
    (LaTeX-add-labels
     "Bibliography")
