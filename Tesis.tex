@@ -1,14 +1,12 @@
 %\include{main.tex} %comentar esta linea para salga bien xD
 % Created 2018-05-23 Wed 20:43
 % Intended LaTeX compiler: pdflatex
-\documentclass[12pt, letterpaper, twoside, openright]{Thesis} % Paper size, default font size and one-sided paper
-\usepackage{pdfpages}
+\documentclass[12pt, letterpaper, twoside, openright, final]{Thesis} % Paper size, default font size and one-sided paper
+\usepackage[final]{grffile}
+\usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{grffile}
-\usepackage{longtable}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
@@ -17,6 +15,7 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\hypersetup{final}
 \usepackage{lmodern}
 \usepackage{mathtools}
 \usepackage{url}
@@ -25,14 +24,16 @@
 \usepackage{amsopn}
 \usepackage{nicefrac}
 \usepackage{units}
+\usepackage{siunitx}
 \usepackage{gensymb}
+\usepackage{caption}
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 \usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
 \usepackage[spanish,english]{babel}
 \hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle}
 
-
+\newcommand{\azul}[1]{{\color{blue}{#1}}}
 \newcommand{\rojo}[1]{{\color{red}{#1}}}
 \date{\today}
 \title{}
@@ -128,7 +129,7 @@
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\input{Appendices/AppendixA}
+%\input{Appendices/AppendixA}
 %\input{Appendices/AppendixB}
 %\input{Appendices/AppendixC}
 \end{document} 

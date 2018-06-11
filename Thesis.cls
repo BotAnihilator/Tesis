@@ -133,7 +133,7 @@
 \setcounter{bottomnumber}{9}
 \setcounter{totalnumber}{20}
 \setcounter{dbltopnumber}{9}
-\usepackage{graphicx}
+\usepackage[final]{graphicx}
 \usepackage{epstopdf}
 \usepackage{booktabs}
 \usepackage{rotating}

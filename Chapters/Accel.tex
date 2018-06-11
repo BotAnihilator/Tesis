@@ -7,26 +7,69 @@
 \label{c:accel} % For referencing the chapter elsewhere, use \ref{} 
 \lhead{Chapter~\ref{c:accel}.
   Accelerators} % This is for the header on each page - perhaps a shortened title
-Particle accelerators are machines whose name is self explanatory, and were
+Particle accelerators are machines whose name is self explanatory. They were
 originally developed for nuclear physics. Although we could argue that a
 cathodic tube is an accelerator itself, we count as the first accelerator one
 that was designed, after Rutherford challenged the scientific community in 1927
 to accelerate charged particles to energies higher than natural
 $\alpha$-decays\cite{Steere2005timeline}, which have a typical energy of
-\SI{5}{MeV} \rojo{I am currently using the \textbackslash{}SI\{\}\{\}, but
-  shouldn't there be a space between units and unit?}, this accelerator was the
-\cite{Cockroft619}
+\SI{5}{MeV}. This accelerator was the Cockcroft-Walton multiplier, which was used to produce the first ever reported nuclear fission. The original setup
+is shown in Fig.~\ref{fig:cock}. It consisted of an AC power source charging a
+ladder of capacitors by means of diodes, generating a large voltage
+output\cite{Cockcroft619}. Following the relation between the electric field
+($\vec{E}$) and the scalar potential ($V$): $\vec{E}=-\nabla{V}$ and equating
+Newton's second law of motion ($\vec{F}=m\vec{a}$) to the Lorentz force
+($\vec{F}=q(\vec{E}+\vec{v}\times\vec{B})$) we infer that the acceleration in an
+electrostatic accelerator such as the Cockcroft-Walton is:
+$\vec{a}=-\frac{q}{m}\nabla{}V$. Ever since, accelerators have not stopped
+evolving. Scientists kept building larger and larger accelerators until they hit
+a limit with electrostatic fields due to voltage breakdown\cite{EASTHAM198410}.
+\begin{figure}
+	\centering
+  \begin{minipage}{\textwidth}
+  	\centering
+   	\includegraphics[width=3.5in]{Pictures/cockroft.jpg}
+  		\caption{\label{fig:cock}
+   			Cockcroft-Walton accelerator original setting.}
+   			\footnotesize{Picture taken from \citep{Cockcroft619}}
+   \end{minipage}
+\end{figure}
+
+A new technique for accelerating charges emerged. Already in 1924 Gustav Ising had proposed
+using drift tubes to shield the charged particle from a pulsed voltage\cite{Ising}, and in
+1928 Rolf  Wider\"oe suggested  using a radiofrequency (RF) system
+\cite{Wideroe1928}. To prove this principle  Wider\"oe built the first
+linear accelerator or linac,  and RF acceleration was born.
+
+Using the RF acceleration principle, Ernest Lawrence set electrons
+in a curved path by applying a perpendicular magnetic field so that the
+electrons would pass several times through and accelerating gap. Figure
+\ref{fig:cyclo} shows Lawrence drawings in his 1934 patent and
+Fig. \ref{fig:lawrence} we see Lawrence standing next to his \SI{1.5}{m}
+diameter cyclotron in the University of California at Berkeley.
+\begin{figure}
+	\centering
+  \begin{minipage}{\textwidth}
+  	\centering
+   	\includegraphics[width=.49\textwidth]{Pictures/cyclo1.png}
+        \includegraphics[width=.49\textwidth]{Pictures/cyclo2.png}
+  		\caption{\label{fig:cyclo}
+                  E. O. Lawrence patent of the cyclotron in the U.S.A.}
+  \end{minipage}
+\end{figure}
 
 \begin{figure}
 	\centering
   \begin{minipage}{\textwidth}
   	\centering
-   	\includegraphics[width=3.5in]{Pictures/cockroft.png}
-  		\caption{\label{fig:cock}
-   			Cockroft-Walton accelerator original setting.}
-   			\footnotesize{Picture taken from \citep{Cockrofft619}}
-   \end{minipage}
+   	\includegraphics[width=.49\textwidth]{Pictures/cyclo3}
+  		\caption{\label{fig:lawrence}
+   			E. O. Lawrence next to his 1.5 m in diameter cyclotron
+                        at LBNL.
+                      \footnotesize{Picture from U.S. Department of Energy}}
+  \end{minipage}
 \end{figure}
+
 
 \section{Working Principles}
 
