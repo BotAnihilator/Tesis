@@ -6,7 +6,7 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("Thesis" "12pt" "letterpaper" "twoside" "openright" "final")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("inputenc" "utf8") ("fontenc" "T1") ("grffile" "final") ("graphicx" "final") ("ulem" "normalem") ("natbib" "square" "numbers" "comma" "sort&compress") ("babel" "spanish" "english")))
+                     '(("grffile" "final") ("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem") ("natbib" "square" "numbers" "comma" "sort&compress") ("babel" "spanish" "english")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
@@ -16,6 +16,7 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
+    "Dedication"
     "Declaration"
     "Quote_page"
     "Abstracts"
@@ -31,14 +32,11 @@
     "Chapters/Conclusions"
     "Thesis"
     "Thesis12"
-    "pdfpages"
-    "multicol"
+    "grffile"
+    "graphicx"
     "subcaption"
     "inputenc"
     "fontenc"
-    "grffile"
-    "graphicx"
-    "longtable"
     "wrapfig"
     "rotating"
     "ulem"

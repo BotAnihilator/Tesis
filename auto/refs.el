@@ -2,6 +2,11 @@
  "refs"
  (lambda ()
    (LaTeX-add-bibitems
+    "cosmotron2"
+    "cosmotron"
+    "GOWARD1946"
+    "veksler"
+    "PhysRev.McM"
     "Cockcroft619"
     "Ising"
     "Wideroe1928"
