@@ -2,6 +2,10 @@
  "refs"
  (lambda ()
    (LaTeX-add-bibitems
+    "isr"
+    "birth"
+    "Amaldi"
+    "wid:book"
     "cosmotron2"
     "cosmotron"
     "GOWARD1946"
@@ -67,6 +71,29 @@
     "cmap1"
     "I17"
     "fcc:mio"
-    "frank:fcc:1"))
+    "frank:fcc:1"
+    "libro"
+    "humphries1990charged"
+    "bryant2005principles"
+    "mann2011introduction"
+    "PA"
+    "LHCMT"
+    "TUP"
+    "bmad"
+    "syn"
+    "b:mehne"
+    "b:bmad"
+    "b:ogilvy"
+    "b:beckmann"
+    "b:henke"
+    "vacuum"
+    "keil"
+    "DR"
+    "faq"
+    "rumolo2011electron"
+    "miguel"
+    "fig:wiki1"
+    "img1"
+    "lbnl"))
  :bibtex)
 
